@@ -1,2 +1,4 @@
 # God-s-grace-online-tutor-.
-It's a platform to off chance to the learners who are undergoing CBE education program.To help learners improve in mathematics 
+Helping CBE Learners Understand Mathematics, Improve Their Skills and Excel
+
+God's Grace Online Tutor is an educational platform created to give learners an opportunity to strengthen their Mathematics skills through CBE-aligned learning, practice and assessment.
