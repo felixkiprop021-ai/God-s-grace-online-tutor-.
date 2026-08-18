@@ -1,11 +1,15 @@
-Writing
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>God's Grace Online Tutor</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -17,15 +21,20 @@ Writing
       background: #1565c0;
       color: white;
       text-align: center;
-      padding: 25px 15px;
+      padding: 30px 15px;
     }
 
     header h1 {
       margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 6px 0;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: 20px auto;
       padding: 15px;
     }
@@ -44,8 +53,15 @@ Writing
       color: #1565c0;
     }
 
+    .payment {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 5px solid #2e7d32;
+    }
+
     .question {
-      margin: 18px 0;
+      margin: 15px 0;
       padding: 15px;
       background: #f8f9fa;
       border-radius: 8px;
@@ -53,20 +69,22 @@ Writing
 
     input {
       padding: 10px;
-      width: 90%;
+      width: 100%;
       margin-top: 8px;
       border: 1px solid #ccc;
       border-radius: 6px;
+      font-size: 16px;
     }
 
     button {
       background: #1565c0;
       color: white;
       border: none;
-      padding: 12px 20px;
+      padding: 13px 22px;
       border-radius: 7px;
       cursor: pointer;
       font-size: 16px;
+      margin-top: 10px;
     }
 
     button:hover {
@@ -78,9 +96,16 @@ Writing
       display: inline-block;
       text-decoration: none;
       color: white;
-      padding: 12px 20px;
+      padding: 13px 22px;
       border-radius: 7px;
       margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #2e7d32;
     }
 
     footer {
@@ -88,6 +113,21 @@ Writing
       padding: 20px;
       background: #1565c0;
       color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      .card {
+        padding: 15px;
+      }
     }
   </style>
 </head>
@@ -103,45 +143,197 @@ Writing
 <div class="container">
 
   <div class="card">
+    <h2>Welcome to God's Grace Online Tutor</h2>
+
+    <p>
+      Welcome to God's Grace Online Tutor, an online learning platform
+      designed to help CBC learners practise, improve and gain confidence
+      in Mathematics.
+    </p>
+
+    <p>
+      We provide carefully prepared assignments and revision exercises
+      for learners.
+    </p>
+  </div>
+
+  <div class="card">
     <h2>Grade 5 Mathematics Assignment</h2>
-    <p>Improve your Mathematics skills with our carefully prepared practice questions.</p>
+
+    <p>
+      Improve your Mathematics skills with this carefully prepared
+      Grade 5 practice assignment.
+    </p>
+
     <p class="price">Upper Primary: KSh 30</p>
-    <p><strong>M-Pesa:</strong> 0745085193</p>
+
+    <div class="payment">
+      <strong>M-Pesa Payment</strong>
+      <p>M-Pesa Number: <strong>0745085193</strong></p>
+      <p>After payment, contact us on WhatsApp for assistance.</p>
+    </div>
   </div>
 
   <div class="card">
     <h2>30 Mathematics Questions</h2>
 
-    <div class="question">1. Calculate: 245 + 378 = <input type="text"></div>
-    <div class="question">2. Calculate: 900 - 456 = <input type="text"></div>
-    <div class="question">3. Calculate: 24 × 6 = <input type="text"></div>
-    <div class="question">4. Calculate: 144 ÷ 12 = <input type="text"></div>
-    <div class="question">5. Find 1/2 of 80. <input type="text"></div>
-    <div class="question">6. Find 3/4 of 100. <input type="text"></div>
-    <div class="question">7. Add: 2/5 + 1/5 = <input type="text"></div>
-    <div class="question">8. Subtract: 7/8 - 3/8 = <input type="text"></div>
-    <div class="question">9. Write 0.75 as a fraction. <input type="text"></div>
-    <div class="question">10. Add: 2.5 + 3.75 = <input type="text"></div>
-    <div class="question">11. Subtract: 8.6 - 2.4 = <input type="text"></div>
-    <div class="question">12. Multiply: 4.5 × 2 = <input type="text"></div>
-    <div class="question">13. A rectangle is 8 cm long and 5 cm wide. Find its perimeter. <input type="text"></div>
-    <div class="question">14. Find the area of a rectangle measuring 9 cm by 4 cm. <input type="text"></div>
-    <div class="question">15. Find the perimeter of a square with side 7 cm. <input type="text"></div>
-    <div class="question">16. Find the area of a square with side 6 cm. <input type="text"></div>
-    <div class="question">17. How many minutes are in 2 hours? <input type="text"></div>
-    <div class="question">18. How many seconds are in 5 minutes? <input type="text"></div>
-    <div class="question">19. Convert 3 metres into centimetres. <input type="text"></div>
-    <div class="question">20. Convert 2 kilograms into grams. <input type="text"></div>
-    <div class="question">21. What is 25% of 200? <input type="text"></div>
-    <div class="question">22. Round 4,678 to the nearest hundred. <input type="text"></div>
-    <div class="question">23. What is the place value of 7 in 5,742? <input type="text"></div>
-    <div class="question">24. Find the next number: 5, 10, 15, 20, __. <input type="text"></div>
-    <div class="question">25. A book costs KSh 80. How much do 5 books cost? <input type="text"></div>
-    <div class="question">26. Mary has KSh 500 and spends KSh 275. How much remains? <input type="text"></div>
-    <div class="question">27. Solve: 6 + 4 × 5. <input type="text"></div>
-    <div class="question">28. Solve: (20 - 8) ÷ 3. <input type="text"></div>
-    <div class="question">29. A class has 45 learners divided equally into 5 groups. How many learners are in each group? <input type="text"></div>
-    <div class="question">30. A farmer has 6 rows of trees with 12 trees in each row. How many trees are there altogether? <input type="text"></div>
+    <p><strong>Instructions:</strong> Answer all questions carefully.</p>
+
+    <div class="question">
+      1. Calculate: 245 + 378 =
+      <input type="text" id="q1">
+    </div>
+
+    <div class="question">
+      2. Calculate: 900 - 456 =
+      <input type="text" id="q2">
+    </div>
+
+    <div class="question">
+      3. Calculate: 24 × 6 =
+      <input type="text" id="q3">
+    </div>
+
+    <div class="question">
+      4. Calculate: 144 ÷ 12 =
+      <input type="text" id="q4">
+    </div>
+
+    <div class="question">
+      5. Find 1/2 of 80.
+      <input type="text" id="q5">
+    </div>
+
+    <div class="question">
+      6. Find 3/4 of 100.
+      <input type="text" id="q6">
+    </div>
+
+    <div class="question">
+      7. Add: 2/5 + 1/5 =
+      <input type="text" id="q7">
+    </div>
+
+    <div class="question">
+      8. Subtract: 7/8 - 3/8 =
+      <input type="text" id="q8">
+    </div>
+
+    <div class="question">
+      9. Write 0.75 as a fraction.
+      <input type="text" id="q9">
+    </div>
+
+    <div class="question">
+      10. Add: 2.5 + 3.75 =
+      <input type="text" id="q10">
+    </div>
+
+    <div class="question">
+      11. Subtract: 8.6 - 2.4 =
+      <input type="text" id="q11">
+    </div>
+
+    <div class="question">
+      12. Multiply: 4.5 × 2 =
+      <input type="text" id="q12">
+    </div>
+
+    <div class="question">
+      13. A rectangle is 8 cm long and 5 cm wide.
+      Find its perimeter.
+      <input type="text" id="q13">
+    </div>
+
+    <div class="question">
+      14. Find the area of a rectangle measuring 9 cm by 4 cm.
+      <input type="text" id="q14">
+    </div>
+
+    <div class="question">
+      15. Find the perimeter of a square with side 7 cm.
+      <input type="text" id="q15">
+    </div>
+
+    <div class="question">
+      16. Find the area of a square with side 6 cm.
+      <input type="text" id="q16">
+    </div>
+
+    <div class="question">
+      17. How many minutes are in 2 hours?
+      <input type="text" id="q17">
+    </div>
+
+    <div class="question">
+      18. How many seconds are in 5 minutes?
+      <input type="text" id="q18">
+    </div>
+
+    <div class="question">
+      19. Convert 3 metres into centimetres.
+      <input type="text" id="q19">
+    </div>
+
+    <div class="question">
+      20. Convert 2 kilograms into grams.
+      <input type="text" id="q20">
+    </div>
+
+    <div class="question">
+      21. What is 25% of 200?
+      <input type="text" id="q21">
+    </div>
+
+    <div class="question">
+      22. Round 4,678 to the nearest hundred.
+      <input type="text" id="q22">
+    </div>
+
+    <div class="question">
+      23. What is the place value of 7 in 5,742?
+      <input type="text" id="q23">
+    </div>
+
+    <div class="question">
+      24. Find the next number:
+      5, 10, 15, 20, __
+      <input type="text" id="q24">
+    </div>
+
+    <div class="question">
+      25. A book costs KSh 80.
+      How much do 5 books cost?
+      <input type="text" id="q25">
+    </div>
+
+    <div class="question">
+      26. Mary has KSh 500 and spends KSh 275.
+      How much remains?
+      <input type="text" id="q26">
+    </div>
+
+    <div class="question">
+      27. Solve: 6 + 4 × 5.
+      <input type="text" id="q27">
+    </div>
+
+    <div class="question">
+      28. Solve: (20 - 8) ÷ 3.
+      <input type="text" id="q28">
+    </div>
+
+    <div class="question">
+      29. A class has 45 learners divided equally into 5 groups.
+      How many learners are in each group?
+      <input type="text" id="q29">
+    </div>
+
+    <div class="question">
+      30. A farmer has 6 rows of trees with 12 trees in each row.
+      How many trees are there altogether?
+      <input type="text" id="q30">
+    </div>
 
     <button onclick="submitWork()">Submit Assignment</button>
 
@@ -150,12 +342,16 @@ Writing
 
   <div class="card">
     <h2>Need Help?</h2>
-    <p>Contact God's Grace Online Tutor through WhatsApp.</p>
 
-    <a class="whatsapp"
-       href="https://wa.me/254707319563"
-       target="_blank">
-       Chat on WhatsApp
+    <p>
+      Contact God's Grace Online Tutor through WhatsApp.
+    </p>
+
+    <a
+      class="whatsapp"
+      href="https://wa.me/254707319563"
+      target="_blank">
+      Chat on WhatsApp
     </a>
   </div>
 
@@ -163,15 +359,20 @@ Writing
 
 <footer>
   <p>© 2026 God's Grace Online Tutor</p>
-  <p>Helping learners improve in Mathematics</p>
+  <p>Helping CBC learners improve in Mathematics</p>
 </footer>
 
 <script>
   function submitWork() {
     document.getElementById("message").innerHTML =
-      "Thank you! Your assignment has been submitted for review.";
+      "Thank you! Your assignment has been submitted for review. Please contact us on WhatsApp for further instructions.";
+
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth"
+    });
   }
 </script>
 
 </body>
-</html>index.html 
+</html>
