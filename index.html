@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God's Grace Online Tutor - Exams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .grades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .grade-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .grade-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .grade-card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .exam-list {
+            list-style: none;
+        }
+        
+        .exam-list li {
+            margin-bottom: 15px;
+        }
+        
+        .exam-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .exam-link:hover {
+            background: #764ba2;
+        }
+        
+        .exam-link.past {
+            background: #48bb78;
+        }
+        
+        .exam-link.past:hover {
+            background: #38a169;
+        }
+        
+        .exam-link.mock {
+            background: #ed8936;
+        }
+        
+        .exam-link.mock:hover {
+            background: #dd6b20;
+        }
+        
+        .subjects {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 God's Grace Online Tutor</h1>
+            <p>Exams Hub - Grade 4 to Grade 9</p>
+        </header>
+        
+        <div class="grades-grid">
+            <!-- GRADE 4 -->
+            <div class="grade-card">
+                <h2>Grade 4</h2>
+                <ul class="exam-list">
+                    <li>
+                        <a href="#" class="exam-link past">Term 1 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 2 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 3 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link mock">Mock Exams</a>
+                        <div class="subjects">Practice Papers</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- GRADE 5 -->
+            <div class="grade-card">
+                <h2>Grade 5</h2>
+                <ul class="exam-list">
+                    <li>
+                        <a href="#" class="exam-link past">Term 1 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 2 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 3 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link mock">Mock Exams</a>
+                        <div class="subjects">Practice Papers</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- GRADE 6 -->
+            <div class="grade-card">
+                <h2>Grade 6</h2>
+                <ul class="exam-list">
+                    <li>
+                        <a href="#" class="exam-link past">Term 1 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 2 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 3 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link mock">Mock Exams</a>
+                        <div class="subjects">Practice Papers</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- GRADE 7 -->
+            <div class="grade-card">
+                <h2>Grade 7</h2>
+                <ul class="exam-list">
+                    <li>
+                        <a href="#" class="exam-link past">Term 1 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 2 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 3 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link mock">Mock Exams</a>
+                        <div class="subjects">Practice Papers</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- GRADE 8 -->
+            <div class="grade-card">
+                <h2>Grade 8</h2>
+                <ul class="exam-list">
+                    <li>
+                        <a href="#" class="exam-link past">Term 1 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 2 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 3 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link mock">Mock Exams</a>
+                        <div class="subjects">Practice Papers</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- GRADE 9 -->
+            <div class="grade-card">
+                <h2>Grade 9</h2>
+                <ul class="exam-list">
+                    <li>
+                        <a href="#" class="exam-link past">Term 1 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 2 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link past">Term 3 Exams 2024</a>
+                        <div class="subjects">English, Maths, Science, Social Studies</div>
+                    </li>
+                    <li>
+                        <a href="#" class="exam-link mock">Mock Exams</a>
+                        <div class="subjects">Practice Papers</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 God's Grace Online Tutor. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
